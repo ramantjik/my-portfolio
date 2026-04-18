@@ -205,3 +205,46 @@ img.socmed {
     flex-direction: row;
     gap: 10px;
 }
+
+
+/* Halaman About */
+
+body.about {
+    background-image: url(img/about-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0px -70px;
+    
+}
+
+a.about {
+    font-weight: bold;
+}
+
+
+.about-box {
+    margin: 80px 0px 0px 0px;
+    background-color: red;
+    width: 61.6%;
+}
+
+h1 {
+    font-family: 'Poppins';
+    font-size: 30px;
+    font-style: italic;
+    width: 70%;
+    padding: 20px;
+    margin: 0px auto; 
+    text-align: center; 
+}
+
+.name-about {
+    margin: 0px auto;
+    width: 70%;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.7);
+    font-size: 30px;
+    font-family: 'Poppins';
+    text-align: center;
+    padding: 50px 30px 30px 30px; /* atas kanan bawah kiri */
+}
