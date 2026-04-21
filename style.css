@@ -102,7 +102,8 @@ table {
     left: 0;
     width: 100%;
     padding: 20px;
-    background-color: white;
+    z-index: 9999;
+    background: rgba(255,255,255,0.6);
 }
 
 .home, .resume {
@@ -224,8 +225,7 @@ a.about {
 
 .about-box {
     margin: 80px 0px 0px 0px;
-    background-color: red;
-    width: 61.6%;
+    width: 61.5%;
 }
 
 h1 {
@@ -235,16 +235,219 @@ h1 {
     width: 70%;
     padding: 20px;
     margin: 0px auto; 
-    text-align: center; 
+    text-align: center;
+    color: #06018B; 
 }
 
 .name-about {
-    margin: 0px auto;
-    width: 70%;
-    border-radius: 20px;
-    background: rgba(255,255,255,0.7);
     font-size: 30px;
     font-family: 'Poppins';
     text-align: center;
-    padding: 50px 30px 30px 30px; /* atas kanan bawah kiri */
+    font-weight: bold;
+    color: #06018B;
+}
+
+.name-about-box {
+    margin: -10px auto 0px;
+    height: 20px;
+    width: 80%;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.7);
+}
+
+.main-about {
+    width: 61.5%;
+}
+
+.left-main {
+    width: 45%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.right-main {
+    width: 55%;
+    float: left;
+    padding: 20px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.edu-header, .achi-header, .org-header, .skill-header, .bach-header {
+    border-radius: 20px;
+    height: 40px;
+    padding: 15px;
+    background: linear-gradient(135deg, #06018B, #020025);
+    position: absolute;
+    box-sizing: border-box;
+    left: 20px;
+    right: 20px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+}
+
+.edu-body, .achi-body, .org-body, .skill-body, .bach-body {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    padding: 50px 0 15px 0;
+    margin: 0 0 30px 0;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+h2 {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 15px;
+    color: white;
+}
+
+img.itb {
+    width: 70px;
+    float: left;
+}
+
+h3 {
+    font-family: 'Poppins';
+    font-weight: bold;
+    font-size: 18px;
+    color: #06018B
+}
+
+h4 {
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #06018B    
+}
+
+h5 {
+    font-family: 'Poppins';
+    font-size: 10px;
+    color: #06018B    
+}
+
+.itb {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+
+ul {
+    font-family: 'Poppins';
+    font-size: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #06018B;
+    line-height: 20px;
+}
+
+ul li div:nth-child(1) {
+    font-weight: bold;
+}
+
+ul li div:nth-child(2) {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+ul:before {
+    position: absolute;
+    content: "";
+    background-color: #06018B;
+    width: 1px;
+    top: 55px;
+    bottom: 50px;
+    left: 30px;
+}
+
+ul div {
+    margin-left: 50px;
+    position: relative;
+}
+
+ul div:nth-child(1):before {
+    position: absolute;
+    content: "";
+    background-color: #06018B;
+    width: 10px;
+    height: 10px;
+    border-radius: 50% ;
+    left: -25px;
+    top: 5px;
+}
+
+.mtiitb, .kpaitb, .ftiitb, .lsikitb, .cic {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+}
+
+.org-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-size: 10px;
+    color: #06018B;
+}
+
+.org-body img {
+    height: 50px;
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.3));
+}
+
+.skill-body img {
+    height: 35px;
+    filter: drop-shadow(0 5px 5px rgba(0,0,0,0.3));
+    margin-bottom: 5px;
+}
+
+.skill-body {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    row-gap: 10px;
+    column-gap: 0px;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 10px;
+    align-items: start;
+    color: #06018B;
+}
+
+.bach-body {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px ;
+}
+
+
+.bach-body .box {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(90deg,#020025,#06018B);
+    color: white;
+    font-family: 'Poppins';
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bach-body .label {
+    height: 50px;
+    font-family: 'Poppins';
+    font-size: 12px;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 20px;
 }
